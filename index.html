@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mock Betting App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Betting App</h1>
+    <div class="wallet">Balance: $1000</div>
+</header>
+
+<main>
+    <section class="events">
+        <h2>Live Matches</h2>
+        <div class="event" data-event="Cricket Match 1">
+            <span>Cricket Match 1</span>
+            <button data-odd="1.5">Team A (1.5)</button>
+            <button data-odd="2.5">Team B (2.5)</button>
+        </div>
+        <div class="event" data-event="Football Match 1">
+            <span>Football Match 1</span>
+            <button data-odd="1.8">Team X (1.8)</button>
+            <button data-odd="2.2">Team Y (2.2)</button>
+        </div>
+        <div class="event" data-event="Basketball Match 1">
+            <span>Basketball Match 1</span>
+            <button data-odd="1.6">Team Alpha (1.6)</button>
+            <button data-odd="2.0">Team Beta (2.0)</button>
+        </div>
+    </section>
+
+    <section class="bet-slip">
+        <h2>Betting Slip</h2>
+        <ul id="bet-list"></ul>
+        <button id="place-bet">Place Bet</button>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
