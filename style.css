@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    background: #1f1f2f;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallet {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.events {
+    flex: 2;
+}
+
+.event {
+    background: #1a1a2e;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.event button:hover {
+    background: #45a049;
+}
+
+.bet-slip {
+    flex: 1;
+    background: #1a1a2e;
+    padding: 1rem;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+#bet-list {
+    list-style: none;
+    padding: 0;
+}
+
+#bet-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+}
+
+#place-bet {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#place-bet:hover {
+    background: #e64a19;
+}
+
+@media(max-width: 768px){
+    main {
+        flex-direction: column;
+    }
+}
